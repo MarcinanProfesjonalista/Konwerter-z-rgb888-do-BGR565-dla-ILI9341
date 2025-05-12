@@ -13,7 +13,7 @@ def rgb565_to_rgb(swapped_rgb565):
     g = int((g << 2) | (g >> 4))  # 6-bitowy do 8-bitowego
     b = int((b << 3) | (b >> 2))  # 5-bitowy do 8-bitowego
 
-    return (b, g, r)
+    return (r, g, b)
 
 # Funkcja do odczytu i rysowania obrazu
 def draw_image_from_header(file_path, width):
